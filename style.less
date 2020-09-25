@@ -1,0 +1,200 @@
+@dark: #272727;
+@black: #333;
+@white: #fff;
+@blue: #167dff;
+@gray: #E5E9EF;
+@green: #9BCC6A;
+@spacegray: #efefef;
+@fontSize: 1em;
+@transparent: transparent;
+@font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@default_dark_text_color: @dark;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: @font;
+    font-weight: normal;
+    line-height: 1.5;
+    color: @default_dark_text_color;
+    text-align: left;
+    background-color: @white;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+}
+
+a {
+
+    text-decoration: none;
+    color: @blue;
+    outline: none;
+    cursor: pointer;
+    font-size: inherit;
+    line-height: inherit;
+    border-bottom: 1px solid transparent;
+    font-family: @font;
+    font-weight: 400;
+    padding: 0.8px 0;
+    display: inline-block;
+    margin: 2px 0;
+    word-wrap: anywhere;
+
+    &:hover, &:focus, &:active> {
+        color: @blue;
+        text-decoration: none;
+        border-bottom: 1px solid @blue;
+        padding: 0.8px 0;
+    }
+
+}
+
+header.main {
+    padding: 120px 0 120px 0;
+    border-bottom: 1px solid @gray;
+
+    background: rgb(249,249,249);
+    background: -moz-linear-gradient(0deg, #f9f9f9 0, #fff 50%, #fff 100%);
+    background: -webkit-linear-gradient(0deg, #f9f9f9 0, #fff 50%, #fff 100%);
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #f9f9f9), color-stop(50%, #fff), to(#fff));
+    background: -webkit-linear-gradient(bottom, #f9f9f9 0, #fff 50%, #fff 100%);
+    background: -moz-linear-gradient(bottom, #f9f9f9 0, #fff 50%, #fff 100%);
+    background: -o-linear-gradient(bottom, #f9f9f9 0, #fff 50%, #fff 100%);
+    background: linear-gradient(0deg, #f9f9f9 0, #fff 50%, #fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#ffffff",GradientType=1);
+
+}
+
+ul.menu {
+    list-style: none;
+    padding: 0px;
+}
+
+input[type=text].search__input {
+
+    color: @black;
+    background: @white;
+    border: 1px solid @spacegray;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    padding: 8px 24px;
+    outline: @transparent;
+    margin-top: 24px;
+    font-family: @font;
+    font-weight: initial;
+    font-size: @fontSize;
+    width: 40%;
+    -webkit-transition: .1s;
+    -o-transition: .1s;
+    -moz-transition: .1s;
+    transition: .1s;
+    min-width: 210px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    &:active, &:focus {
+        background-color: #EEEEEE;
+        border: 1px solid @gray;
+    }
+
+}
+
+td, th {
+    padding: 6px;
+}
+
+div[role="menu"] {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 24px;
+}
+
+main {
+    margin: 32px 0 0 0;
+}
+
+nav.navbar-white {
+
+    border: 0px solid transparent;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-bottom: 1px solid rgba(51,51,51,0.14);
+    min-height: 0px;
+
+    background: rgb(252,252,252);
+    background: -moz-linear-gradient(0deg, rgba(252,252,252,0.9) 0%, rgba(255,255,255,0.9) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(252,252,252,0.9) 0%, rgba(255,255,255,0.9) 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(252,252,252,0.9)), to(rgba(255,255,255,0.9)));
+    background: -webkit-linear-gradient(bottom, rgba(252,252,252,0.9) 0%, rgba(255,255,255,0.9) 100%);
+    background: -moz-linear-gradient(bottom, rgba(252,252,252,0.9) 0%, rgba(255,255,255,0.9) 100%);
+    background: -o-linear-gradient(bottom, rgba(252,252,252,0.9) 0%, rgba(255,255,255,0.9) 100%);
+    background: linear-gradient(0deg, rgba(252,252,252,0.9) 0%, rgba(255,255,255,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f9f9f9",endColorstr="#ffffff",GradientType=1);
+
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+
+}
+
+nav.navbar-white > div > div > ul > li > a {
+
+    color: @black;
+    padding: 8px 4px;
+    font-weight: initial;
+    font-size: small;
+
+    &:hover, &:focus {
+        background: @transparent;
+        border: none;
+        color: @blue;
+    }
+
+}
+
+nav.navbar-white > div > div > ul > li {
+    background: @transparent;
+}
+
+img.image {
+    width: 100%;
+}
+
+pre.prettyprint {
+    border: 1px solid rgba(51,51,51,0.14) !important;
+    margin: 24px 0;
+}
+
+pre.prettyprint > .linenums {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 64%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 64%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 64%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#eeeeee",GradientType=1);
+}
+
+.text-gray-soft {
+    color: #666a6d !important;
+}
+
+
+@media (min-width:768px) {
+    div.card {
+        border-right: 1px solid rgba(51,51,51,0.14);
+        margin: 24px 0;
+        text-align: center;
+    }
+
+    div.card:last-child {
+        border-right: none;
+    }
+}
